@@ -16,6 +16,10 @@ void main()
         else 
         {
             printf("Brat mi, cooknat si!!\n");
+            while (1)
+            {
+                printf("You are gay!!!\n");
+            }
         }
         } 
         while (1);  
