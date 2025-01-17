@@ -16,6 +16,7 @@ void main()
         else 
         {
             printf("Brat mi, cooknat si!!\n");
+            printf("Ti zagubi igrata i zatova sega shte si ponesesh posledstviqta!!\n");
             while (1)
             {
                 printf("You are gay!!!\n");
