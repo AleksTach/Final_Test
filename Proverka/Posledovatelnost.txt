@@ -1,0 +1,267 @@
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS
+$ git clone https://github.com/AleksTach/Final_Test.git
+Cloning into 'Final_Test'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS
+$ cd Final_Test/
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (main)
+$ git add -A
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (main)
+$ git commit -m commit_1
+[main 304f344] commit_1
+ 1 file changed, 22 insertions(+)
+ create mode 100644 Test_file.c
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 534 bytes | 534.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/AleksTach/Final_Test.git
+   3ce282f..304f344  main -> main
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (main)
+$ git branch klon
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (main)
+$ git branch klonche
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (main)
+$ git checkout klon
+Switched to branch 'klon'
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klon)
+$ git status
+On branch klon
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test_file.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klon)
+$ git add -A
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klon)
+$ git commit -m commit_2
+[klon c64be9d] commit_2
+ 1 file changed, 1 insertion(+)
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klon)
+$ git push
+fatal: The current branch klon has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin klon
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klon)
+$  git push --set-upstream origin klon
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 386 bytes | 386.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'klon' on GitHub by visiting:
+remote:      https://github.com/AleksTach/Final_Test/pull/new/klon
+remote:
+To https://github.com/AleksTach/Final_Test.git
+ * [new branch]      klon -> klon
+branch 'klon' set up to track 'origin/klon'.
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klon)
+$
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klon)
+$ git status
+On branch klon
+Your branch is up to date with 'origin/klon'.
+
+nothing to commit, working tree clean
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klon)
+$ git checkout klonche
+Switched to branch 'klonche'
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klonche)
+$ git status
+On branch klonche
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test_file.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klonche)
+$ git add -A
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klonche)
+$ git commit -m commit_3
+[klonche e9fa283] commit_3
+ 1 file changed, 4 insertions(+)
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klonche)
+$ git push
+fatal: The current branch klonche has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin klonche
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klonche)
+$ git push --set-upstream origin klonche
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 1.65 KiB | 846.00 KiB/s, done.
+Total 9 (delta 1), reused 3 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'klonche' on GitHub by visiting:
+remote:      https://github.com/AleksTach/Final_Test/pull/new/klonche
+remote:
+To https://github.com/AleksTach/Final_Test.git
+ * [new branch]      klonche -> klonche
+branch 'klonche' set up to track 'origin/klonche'.
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klonche)
+$
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klonche)
+$ git pull origin main
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 882 bytes | 23.00 KiB/s, done.
+From https://github.com/AleksTach/Final_Test
+ * branch            main       -> FETCH_HEAD
+   304f344..99c2d1e  main       -> origin/main
+Auto-merging Test_file.c
+CONFLICT (content): Merge conflict in Test_file.c
+Automatic merge failed; fix conflicts and then commit the result.
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klonche|MERGING)
+$ git merge main
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klonche|MERGING)
+$ git status
+On branch klonche
+Your branch is up to date with 'origin/klonche'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   Test_file.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klonche|MERGING)
+$ git status
+On branch klonche
+Your branch is up to date with 'origin/klonche'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   Test_file.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klonche|MERGING)
+$ git add -A
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klonche|MERGING)
+$ git commit
+hint: Waiting for your editor to close the file... unix2dos: converting file C:/Users/tisho/Desktop/Test_VS/Final_Test/.git/COMMIT_EDITMSG to DOS format...
+dos2unix: converting file C:/Users/tisho/Desktop/Test_VS/Final_Test/.git/COMMIT_EDITMSG to Unix format...
+[klonche ae25431] merge_conflict
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klonche)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 409 bytes | 409.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/AleksTach/Final_Test.git
+   e9fa283..ae25431  klonche -> klonche
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (klonche)
+$ git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (main)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 890 bytes | 21.00 KiB/s, done.
+From https://github.com/AleksTach/Final_Test
+   99c2d1e..5a2510f  main       -> origin/main
+Updating 304f344..5a2510f
+Fast-forward
+ Test_file.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (main)
+$ git branch -d klon
+Deleted branch klon (was c64be9d).
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (main)
+$ git branch -d klonche
+Deleted branch klonche (was ae25431).
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (main)
+$ gitk
+
+tisho@Aleks_Tachev MINGW64 ~/Desktop/Test_VS/Final_Test (main)
+$
